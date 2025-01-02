@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* text-align: center; */
+            font-size: 20px;
+            font-family: cursive;
+            letter-spacing: 5px;
+            /* flex-wrap: wrap; */
+            padding: 12px;
+            position: relative;
+        }
+        @media(max-width:620px) {
+            header {
+                font-size: 16px;
+            }
+
+        }
+
+        header div {
+            position: absolute;
+            right: 100px;
+        }
+
+        @media(max-width:620px) {
+            header div {
+                right: 0px;
+            }
+
+        }
+
+        header div button {
+            font-size: 20px;
+            padding: 3px;
+            border-radius: 10px;
+            background-image: linear-gradient(45deg, lightcoral 20%, darkorange, yellow);
+            font-family: cursive;
+        }
+
+        @media(max-width:620px) {
+            header div button {
+                font-size: 13px;
+                border-radius: 5px;
+                padding: 0px;
+            }
+
+        }
+        header div a{
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 3px;
+            border: 1px solid black;
+            border-radius: 10px;
+            letter-spacing: 0px;
+            background-image: linear-gradient(45deg ,lightcoral 20%,darkorange,yellow);
+        }
+        @media(max-width:620px) {
+            header div a {
+                font-size: 13px;
+                border-radius: 5px;
+                padding: 0px;
+                
+            }
+        }
+        main{
+            width: 100%;
+            min-height: 89vh;
+            overflow: hidden;
+            background-image: linear-gradient(45deg ,lightcoral 20%,darkorange,yellow);
+        }
+        section{
+        
+        /* border: 1px solid black; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 100px;
+    }
+    #d1{
+            width: 700px;
+           min-height: 55vh;
+           background-image:linear-gradient(45deg,rgba(128, 234, 255, 0.926),rgba(0, 0, 0, 0.164)),url(Images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* background-color: lightseagreen; */
+            border-radius: 5%;
+            box-shadow: 10px 10px 30px 10px black;
+            display: flex;
+           justify-content:center;
+           padding: 30px;
+          font-family: cursive;
+           font-size: 30px;
+        }
+        #d1 ul li {
+            line-height: 60px;
+        }
+
+        @media(max-width:420px){
+            main{
+                overflow: hidden;
+            }
+            section {
+              width:300px;  
+              padding:30px;
+            
+            }
+            #d1{
+                width:100%;
+            }
+            #d1 ul li {
+                font-size: 16px;
+            
+            line-height: 50px;
+        }
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Skills</h1>
+        <div ><a href="project_portfolio.html" >Forward</a>
+            <button>Back</button>
+        </div>
+</header>
+    <main>
+        <section>
+           <div id="d1">
+               <ul>
+               <li><i class="fa-brands fa-html5"></i> HTML5</li>
+               <li><i class="fa-brands fa-js"></i> Javascript</li>
+               <li><i class="fa-solid fa-database"></i> SQL</li>
+               <li><i class="fa-brands fa-java"></i> JAVA</li>
+               <li><i class="fa-brands fa-python"></i> PYTHON</li>
+               <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+           </ul>
+        </div>
+   </section>
+    </main>   
+    <script>
+        let btns=document.querySelectorAll("button")
+        
+        btns[1]=addEventListener("click",function(){
+            history.back();
+        })
+        
+    </script>
+   </body>
+   </html>
